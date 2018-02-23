@@ -70,6 +70,8 @@ body {
 
 #company {
     font-size: 3.125rem;
+    font-weight: 200;
+    margin: 0;
 }
 
 #services {

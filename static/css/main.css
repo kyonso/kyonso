@@ -1,0 +1,103 @@
+/*
+ * LAYOUT
+ *==============================*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.cell {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    align-self: stretch;
+    flex-grow: 1;
+    min-height: 100vh;
+}
+
+.left {
+    background-color: #4FC3F7;
+}
+
+.right {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.right a,
+.right a:visited {
+    color: #4FC3F7;
+    text-decoration: underline;
+}
+
+.text {
+    text-transform: uppercase;
+    color: #000;
+    line-height: 1;
+    font-weight: 200;
+    text-align: center;
+}
+
+.text span,
+.text a {
+    display: block;
+}
+
+#company {
+    font-size: 3.125rem;
+}
+
+#services {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+#location {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+#email {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+    .left {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    #company {
+        font-size: 2.5rem;
+    }
+}
